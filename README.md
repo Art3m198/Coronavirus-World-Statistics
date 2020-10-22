@@ -11,7 +11,7 @@ COVID-19 Stats App using this API https://corona.lmao.ninja/
 ## Screenshot
 
 ### Main  
-<img src="https://github.com/Art3m198/Coronavirus-World-Statistics/blob/main/images/1.PNG" width="50%" height="50%">  
+<img src="https://github.com/Art3m198/Coronavirus-World-Statistics/blob/main/images/main.PNG" width="50%" height="50%">  
 
 
 ## Demo:
