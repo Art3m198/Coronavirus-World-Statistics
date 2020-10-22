@@ -1,6 +1,8 @@
 # Coronavirus-World-Statistics  
 COVID-19 Stats App use the API and JS  
 
+Russian version: https://art3m198.github.io/Coronavirus-World-Statistics/russian/  
+
 # About
 
 COVID-19 Stats App using this API https://disease.sh/
