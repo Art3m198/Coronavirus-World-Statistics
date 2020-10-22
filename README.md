@@ -3,7 +3,7 @@ COVID-19 Stats App use the API and JS
 
 # About
 
-COVID-19 Stats using this API https://corona.lmao.ninja/
+COVID-19 Stats App using this API https://corona.lmao.ninja/
 
 - You can view statistics for any country in the list
 - App use JS, Bootstrap, CSS and HTML
