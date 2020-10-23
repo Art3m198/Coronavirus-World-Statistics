@@ -1,7 +1,8 @@
     date.innerHTML = ""
-    var country="RU"
-    var now = new Date().toLocaleString()
-    document.getElementById("date").innerHTML += now
+    var country="US"
+
+    date.innerHTML = ""
+
     var url="https://disease.sh/v3/covid-19/countries/"+country
     covidData(url)
     
@@ -9,10 +10,7 @@
 
     form.addEventListener('submit', function(e){
         e.preventDefault()
-        date.innerHTML = ""
         var country=document.getElementById("country").value
-        var now = new Date().toLocaleString()
-        document.getElementById("date").innerHTML += now
         var url="https://disease.sh/v3/covid-19/countries/"+country
         covidData(url)
     })
@@ -24,6 +22,7 @@
 
         let length = data.length
        
+        let updated = document.getElementById("updated")
         let confirmed = document.getElementById("confirmed")
         let recovered = document.getElementById("recovered")
         let deaths = document.getElementById("deaths")
@@ -32,6 +31,7 @@
         let todayDeaths = document.getElementById("todayDeaths")
 
     
+        date.innerHTML = ""
         confirmed.innerHTML = ""
         recovered.innerHTML = ""
         deaths.innerHTML = ""
@@ -50,6 +50,11 @@
     
                                     }
         else
+
+        var st = data.updated
+        var dt = new Date(st)
+
+        date.append(dt.toLocaleString())
         confirmed.append(data.cases.toLocaleString())
         recovered.append(data.recovered.toLocaleString())
         deaths.append(data.deaths.toLocaleString())
