@@ -1,5 +1,5 @@
     date.innerHTML = ""
-    var country="RU"
+    var country="US"
     var now = new Date().toLocaleString()
     document.getElementById("date").innerHTML += now
     var url="https://disease.sh/v3/covid-19/countries/"+country
