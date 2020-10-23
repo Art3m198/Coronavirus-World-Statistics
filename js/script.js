@@ -73,14 +73,22 @@ async function covidData2(url2){
     let recovered2 = document.getElementById("recovered")
     let deaths2 = document.getElementById("deaths")
 
+    let todayconfirmed2 = document.getElementById("todayCases")
+    let todayrecovered2 = document.getElementById("todayRecovered")
+
     allconfirmed.innerHTML = ""
     allrecovered.innerHTML = ""
     alldeaths.innerHTML = ""
+    alltodayconfirmed.innerHTML = ""
+    alltodayrecovered.innerHTML = ""
+
 
     if (data2 != null) {
     allconfirmed.append(data2.cases.toLocaleString())
     allrecovered.append(data2.recovered.toLocaleString())
     alldeaths.append(data2.deaths.toLocaleString())
+    alltodayconfirmed.append(data2.todayCases.toLocaleString())
+    alltodayrecovered.append(data2.todayRecovered.toLocaleString())
 
 
     }

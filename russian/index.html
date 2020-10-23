@@ -17,11 +17,11 @@
 <div class="content">
     <div class="content-block">
         <div class="container text-center covid">
-    <h1 class="text-center frame">COVID-19 Статистика</h1>
+        <h1 class="text-center frame">COVID-19 Статистика</h1>
     <div id ="main" class="form-group">
         <div class="col-xs-4">
     <form id="form" class="text-center mt-0 mb-0 frame2">
-        <select class="form-control mb-0" id="country"> 
+        <select class="select" id="country"> 
                 <option value="RU">Russian Federation</option>
                 <option value="US">United States</option> 
                 <option value="UA">Ukraine</option>
@@ -251,7 +251,7 @@
                 <option value="ZM">Zambia</option>
                 <option value="ZW">Zimbabwe</option>
             </select>
-        <input type="submit" class="btn btn-success" value ="Показать">
+            <input type="submit" class="btn btn-success" value ="Показать">
 		</div>
     </form>
         </div>
@@ -316,15 +316,30 @@
         </div>
         </div>
 	</div>
-	</div>
+
 
 <div class="container text-center">
 <div class="content-block parallax  mt-4" id="parallax">
     <p>Оставайтесь дома</p>
 </div>
-        <h1 class="text-center frame3">Мировая Статистика</h1>
-        <div class="container">
-            <div class="row">
+<h1 class="text-center frame3">Мировая Статистика</h1>
+<div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-c-today order-card">
+                    <div class="card-block">
+                        <h6 class="mb-20 text-center">Сегодня выявлено в мире</h6>
+                        <h2 class="text-center"><div id="alltodayconfirmed"></div></h2>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="card bg-c-today order-card">
+                    <div class="card-block">
+                        <h6 class="mb-20 text-center">Сегодня выздоровело в мире</h6>
+                        <h2 class="text-center"><div id="alltodayrecovered"></div></h2>
+                    </div>
+                    </div>
+                    </div>
                 <div class="col-md-4">
                     <div class="card bg-c-yellow order-card">
                     <div class="card-block">
@@ -351,19 +366,19 @@
                     </div>
                     </div>
                     </div>
-           
            </div>
            </div>
     </div>
-</div></div>
+</div>
     <div class = "content-block" id="footer">
         <div class="container ">
-                    <p><a href="https://github.com/Art3m198" target="_blanc"><img src="images/git.png" width="23" height="23" ></a>  Мы используем<a href = "https://disease.sh/" target="_blanc"> этот API</a></p>
-                    <p>Информация о COVID-19 предоставлена Университетом Джонса Хопкинса </p>
-                    <p><a target = "_blanc" href= "../">English version</a></p>
+            <p><a href="https://github.com/Art3m198" target="_blanc"><img src="images/git.png" width="23" height="23" ></a>  Мы используем<a href = "https://disease.sh/" target="_blanc"> этот API</a></p>
+            <p>Информация о COVID-19 предоставлена Университетом Джонса Хопкинса </p>
+            <p><a target = "_blanc" href= "../">English version</a></p>
                     
             </div>
         </div>
+			</div>
         <script type="text/javascript" src="js/script.js"></script>	
 </body>
 </html>
