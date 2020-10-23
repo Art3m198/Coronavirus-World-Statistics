@@ -1,8 +1,4 @@
-    date.innerHTML = ""
     var country="US"
-
-    date.innerHTML = ""
-
     var url="https://disease.sh/v3/covid-19/countries/"+country
     covidData(url)
     
@@ -29,6 +25,8 @@
         let todayRecovered= document.getElementById("todayRecovered")
         let todayCases= document.getElementById("todayCases")
         let todayDeaths = document.getElementById("todayDeaths")
+        var st = data.updated
+        var dt = new Date(st)
 
     
         date.innerHTML = ""
@@ -41,6 +39,7 @@
 
 
         if (response.status == "404") {
+        date.append("No cases")
         confirmed.append("No cases")
         recovered.append("No cases")
         deaths.append("No cases")
@@ -50,9 +49,6 @@
     
                                     }
         else
-
-        var st = data.updated
-        var dt = new Date(st)
 
         date.append(dt.toLocaleString())
         confirmed.append(data.cases.toLocaleString())
