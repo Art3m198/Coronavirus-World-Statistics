@@ -123,6 +123,9 @@
 background: #2B3E51; color: white;
 padding:1px;
 }
+#footer a{
+color: rgb(110, 202, 255);
+  }
 
 p {
    display: block;
