@@ -1,4 +1,4 @@
-# Coronavirus-World-Statistics  
+# Coronavirus World Statistics  
 COVID-19 Stats App use the API and JS  
 
 English version: https://art3m198.github.io/Coronavirus-World-Statistics/  
