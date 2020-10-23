@@ -1,4 +1,4 @@
-    var country="US"
+    var country="RU"
     var url="https://disease.sh/v3/covid-19/countries/"+country
     covidData(url)
     
